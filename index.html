@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brother's Mobile Shop - Original Used Phones in Chittagong</title>
+    <link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='black' rx='20'/><text x='50' y='68' font-size='60' text-anchor='middle' fill='%2300aaff' font-family='Arial Black'>B</text></svg>">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                        'hind': ['Hind Siliguri', 'sans-serif']
+                    },
+                    colors: {
+                        'brand': '#0066ff',
+                        'brand-dark': '#0052cc'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        * { -webkit-tap-highlight-color: transparent; }
+        body { font-family: 'Poppins', 'Hind Siliguri', system-ui, -apple-system, sans-serif; background: #f7f8fa; }
+        .hind { font-family: 'Hind Siliguri', sans-serif; }
+        .scrollbar-hide::-webkit-scrollbar { display: none; }
+        .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+        .line-clamp-2 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+        .product-card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px -10px rgba(0,102,255,0.2); }
+        .shimmer { background: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%); background-size: 200% 100%; animation: shimmer 1.5s linear infinite; }
+        @keyframes shimmer { to { background-position-x: -200%; } }
+    </style>
+</head>
+<body class="text-slate-800">
+    <!-- Top Bar -->
+    <div class="bg-[#0a1224] text-white text-[12px] md:text-[13px]">
+        <div class="max-w-[1400px] mx-auto px-3 py-2 flex items-center justify-between gap-2">
+            <div class="flex items-center gap-2 overflow-hidden">
+                <span class="hidden sm:inline-flex items-center gap-1 bg-white/10 px-2 py-0.5 rounded-full"><i class="ri-map-pin-2-fill text-[#38bdf8]"></i> Halishahar</span>
+                <p class="truncate hind">📱 <strong>Brother's Mobile Shop</strong> — সব ব্র্যান্ডের Original Mobile কম দামে ✅ Buy & Sell | Cash On Delivery Anywhere Bangladesh</p>
+            </div>
+            <a href="tel:01833738390" class="flex items-center gap-1.5 font-semibold text-[#38bdf8] hover:text-white transition whitespace-nowrap">
+                <i class="ri-phone-fill text-base"></i>
+                <span class="hidden sm:inline">01833-738390</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-xl border-b border-slate-100">
+        <div class="max-w-[1400px] mx-auto px-3 md:px-4">
+            <div class="flex items-center gap-3 h-[68px]">
+                <button id="menuBtn" class="lg:hidden w-10 h-10 grid place-items-center rounded-xl hover:bg-slate-100">
+                    <i class="ri-menu-2-line text-2xl"></i>
+                </button>
+                
+                <a href="#" class="flex items-center gap-2.5">
+                    <div class="w-12 h-12 rounded-xl bg-black p-1 shadow-md shadow-blue-500/10 overflow-hidden">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 1000'><rect width='1000' height='1000' fill='black'/><g transform='translate(250,120) scale(1.1)'><path d='M150 0c60 0 140 0 170 30v380c0 25-80 70-120 95-40-25-120-70-120-95V30C80 0 90 0 150 0z' fill='none' stroke='%2300aaff' stroke-width='14' stroke-linejoin='round'/><rect x='140' y='20' width='60' height='14' rx='7' fill='%2338bdf8'/><text x='30' y='320' font-family='Arial Black' font-size='340' font-weight='900' fill='url(%23sil)'>B</text><path d='M280 140l50 55 90-85v210l-55 40v-135l-35 30-50-55z' fill='url(%23blu)'/></g><text x='500' y='680' text-anchor='middle' font-family='Arial' font-size='110' font-weight='800' fill='url(%23sil)' letter-spacing='4'>BROTHERS</text><text x='500' y='780' text-anchor='middle' font-family='Arial' font-size='60' font-weight='700' fill='%2300aaff' letter-spacing='18'>MOBILE SHOP</text><defs><linearGradient id='blu' x1='0' y1='0' x2='0' y2='1'><stop offset='0%' stop-color='%2338bdf8'/><stop offset='100%' stop-color='%230055dd'/></linearGradient><linearGradient id='sil' x1='0' y1='0' x2='0' y2='1'><stop offset='0%' stop-color='%23fff'/><stop offset='50%' stop-color='%23cbd5e1'/><stop offset='100%' stop-color='%23999'/></linearGradient></defs></svg>" alt="Brother's Mobile Shop" class="w-full h-full object-contain">
+                    </div>
+                    <div class="hidden sm:block leading-[1.1]">
+                        <div class="font-extrabold text-[18px] tracking-tight text-slate-900 font-poppins">BROTHER'S</div>
+                        <div class="text-[11px] font-bold tracking-[0.2em] text-brand -mt-0.5">MOBILE SHOP</div>
+                    </div>
+                </a>
+
+                <div class="hidden md:flex flex-1 max-w-[640px] mx-4">
+                    <div class="relative w-full group">
+                        <input id="searchInput" type="text" placeholder="Search for iPhone, Samsung, Xiaomi..." class="w-full h-11 pl-11 pr-4 bg-slate-50 border border-slate-200 rounded-full outline-none focus:bg-white focus:border-brand focus:ring-4 focus:ring-blue-500/10 transition text-[14px]">
+                        <i class="ri-search-line absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-brand text-lg"></i>
+                        <button class="absolute right-1.5 top-1/2 -translate-y-1/2 h-8 px-3 bg-brand text-white rounded-full text-[12px] font-medium hover:bg-brand-dark hidden lg:block">Search</button>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-1 sm:gap-3 ml-auto">
+                    <a href="#" class="hidden md:grid w-10 h-10 place-items-center rounded-xl hover:bg-slate-100 text-slate-600 hover:text-brand transition">
+                        <i class="ri-user-3-line text-[22px]"></i>
+                    </a>
+                    <button id="wishlistBtn" class="relative w-10 h-10 grid place-items-center rounded-xl hover:bg-slate-100 text-slate-600 hover:text-brand transition">
+                        <i class="ri-heart-3-line text-[22px]"></i>
+                        <span id="wishCount" class="absolute -top-1 -right-1 min-w-[18px] h-[18px] px-1 grid place-items-center bg-rose-500 text-white text-[10px] font-bold rounded-full">0</span>
+                    </button>
+                    <button id="cartBtn" class="relative w-10 h-10 grid place-items-center rounded-xl hover:bg-slate-100 text-slate-600 hover:text-brand transition">
+                        <i class="ri-shopping-bag-3-line text-[22px]"></i>
+                        <span id="cartCount" class="absolute -top-1 -right-1 min-w-[18px] h-[18px] px-1 grid place-items-center bg-brand text-white text-[10px] font-bold rounded-full">0</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Search -->
+            <div class="md:hidden pb-3">
+                <div class="relative">
+                    <input id="searchInputMobile" type="text" placeholder="Search phones..." class="w-full h-10 pl-10 pr-3 bg-slate-50 border border-slate-200 rounded-xl outline-none focus:border-brand text-[14px]">
+                    <i class="ri-search-line absolute left-3 top-1/2 -translate-y-1/2 text-slate-400"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nav -->
+        <nav class="border-t border-slate-100 bg-white">
+            <div class="max-w-[1400px] mx-auto px-3 md:px-4">
+                <div class="flex items-center gap-5 lg:gap-7 h-11 overflow-x-auto scrollbar-hide text-[13.5px] font-medium">
+                    <a href="#" class="text-brand flex items-center gap-1.5 whitespace-nowrap"><i class="ri-home-5-fill"></i> Home</a>
+                    <a href="#products" class="hover:text-brand whitespace-nowrap">Shop</a>
+                    <a href="#" data-filter="Apple" class="hover:text-brand whitespace-nowrap">iPhone</a>
+                    <a href="#" data-filter="Samsung" class="hover:text-brand whitespace-nowrap">Samsung</a>
+                    <a href="#" data-filter="Xiaomi" class="hover:text-brand whitespace-nowrap">Xiaomi</a>
+                    <a href="#" data-filter="OPPO" class="hover:text-brand whitespace-nowrap">OPPO</a>
+                    <a href="#" data-filter="Vivo" class="hover:text-brand whitespace-nowrap">Vivo</a>
+                    <a href="#" data-filter="OnePlus" class="hover:text-brand whitespace-nowrap">OnePlus</a>
+                    <a href="#" data-filter="Google" class="hover:text-brand whitespace-nowrap">Pixel</a>
+                    <a href="#" class="hover:text-brand whitespace-nowrap">Exchange</a>
+                    <a href="#" class="text-rose-600 flex items-center gap-1 whitespace-nowrap"><i class="ri-fire-fill"></i> Offers</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="fixed inset-0 z-50 hidden">
+        <div id="menuOverlay" class="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
+        <div id="menuPanel" class="absolute left-0 top-0 h-full w-[300px] bg-white shadow-2xl -translate-x-full transition-transform duration-300">
+            <div class="p-4 border-b flex items-center justify-between">
+                <div class="font-bold">Menu</div>
+                <button id="menuClose" class="w-9 h-9 grid place-items-center rounded-lg hover:bg-slate-100"><i class="ri-close-line text-2xl"></i></button>
+            </div>
+            <div class="p-4 space-y-1 text-[15px]">
+                <a class="flex items-center gap-3 p-3 rounded-xl bg-blue-50 text-brand font-medium"><i class="ri-home-5-line text-xl"></i> Home</a>
+                <a class="flex items-center gap-3 p-3 rounded-xl hover:bg-slate-50"><i class="ri-smartphone-line text-xl"></i> All Phones</a>
+                <a class="flex items-center gap-3 p-3 rounded-xl hover:bg-slate-50"><i class="ri-exchange-line text-xl"></i> Sell Your Phone</a>
+                <a class="flex items-center gap-3 p-3 rounded-xl hover:bg-slate-50"><i class="ri-customer-service-2-line text-xl"></i> Contact: 01833-738390</a>
+                <a class="flex items-center gap-3 p-3 rounded-xl hover:bg-slate-50"><i class="ri-map-pin-line text-xl"></i> Halishahar, Chittagong</a>
+            </div>
+        </div>
+    </div>
+
+    <main class="max-w-[1400px] mx-auto px-3 md:px-4">
+        <!-- Hero Slider -->
+        <section class="mt-4">
+            <div class="relative h-[300px] md:h-[420px] lg:h-[460px] rounded-[24px] overflow-hidden bg-black">
+                <div id="heroSlides" class="relative w-full h-full">
+                    <!-- Slides injected by JS -->
+                </div>
+                <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-20" id="heroDots"></div>
+                <button id="prevSlide" class="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 grid place-items-center rounded-full bg-white/20 hover:bg-white/30 backdrop-blur text-white z-20"><i class="ri-arrow-left-s-line text-2xl"></i></button>
+                <button id="nextSlide" class="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 grid place-items-center rounded-full bg-white/20 hover:bg-white/30 backdrop-blur text-white z-20"><i class="ri-arrow-right-s-line text-2xl"></i></button>
+            </div>
+        </section>
+
+        <!-- Why Choose Features -->
+        <section class="mt-6">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2.5 md:gap-3">
+                <div class="bg-white rounded-2xl p-3.5 border border-slate-100 hover:border-blue-200 hover:shadow-md hover:shadow-blue-500/5 transition group">
+                    <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 grid place-items-center mb-2.5 group-hover:scale-110 transition"><i class="ri-shield-check-fill text-xl"></i></div>
+                    <div class="font-semibold text-[13px] leading-tight">Original Products Only</div>
+                    <div class="text-[12px] text-slate-500 hind mt-0.5">সব পণ্য ১০০% অরিজিনাল</div>
+                </div>
+                <div class="bg-white rounded-2xl p-3.5 border border-slate-100 hover:border-blue-200 hover:shadow-md hover:shadow-blue-500/5 transition group">
+                    <div class="w-10 h-10 rounded-xl bg-blue-50 text-brand grid place-items-center mb-2.5 group-hover:scale-110 transition"><i class="ri-truck-fill text-xl"></i></div>
+                    <div class="font-semibold text-[13px] leading-tight">Cash On Delivery</div>
+                    <div class="text-[12px] text-slate-500 hind mt-0.5">ক্যাশ অন ডেলিভারি সুবিধা</div>
+                </div>
+                <div class="bg-white rounded-2xl p-3.5 border border-slate-100 hover:border-blue-200 hover:shadow-md hover:shadow-blue-500/5 transition group">
+                    <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 grid place-items-center mb-2.5 group-hover:scale-110 transition"><i class="ri-restart-line text-xl"></i></div>
+                    <div class="font-semibold text-[13px] leading-tight">7-Day Replacement</div>
+                    <div class="text-[12px] text-slate-500 hind mt-0.5">৭ দিনের রিপ্লেসমেন্ট</div>
+                </div>
+                <div class="bg-white rounded-2xl p-3.5 border border-slate-100 hover:border-blue-200 hover:shadow-md hover:shadow-blue-500/5 transition group">
+                    <div class="w-10 h-10 rounded-xl bg-violet-50 text-violet-600 grid place-items-center mb-2.5 group-hover:scale-110 transition"><i class="ri-tools-fill text-xl"></i></div>
+                    <div class="font-semibold text-[13px] leading-tight">1-Year Service</div>
+                    <div class="text-[12px] text-slate-500 hind mt-0.5">১ বছরের সার্ভিস ওয়ারেন্টি</div>
+                </div>
+                <div class="bg-white rounded-2xl p-3.5 border border-slate-100 hover:border-blue-200 hover:shadow-md hover:shadow-blue-500/5 transition group">
+                    <div class="w-10 h-10 rounded-xl bg-rose-50 text-rose-600 grid place-items-center mb-2.5 group-hover:scale-110 transition"><i class="ri-price-tag-3-fill text-xl"></i></div>
+                    <div class="font-semibold text-[13px] leading-tight">Best Price Guaranteed</div>
+                    <div class="text-[12px] text-slate-500 hind mt-0.5">সর্বনিম্ন মূল্যে সেরা</div>
+                </div>
+                <div class="bg-white rounded-2xl p-3.5 border border-slate-100 hover:border-blue-200 hover:shadow-md hover:shadow-blue-500/5 transition group">
+                    <div class="w-10 h-10 rounded-xl bg-cyan-50 text-cyan-600 grid place-items-center mb-2.5 group-hover:scale-110 transition"><i class="ri-smartphone-fill text-xl"></i></div>
+                    <div class="font-semibold text-[13px] leading-tight">All Brands</div>
+                    <div class="text-[12px] text-slate-500 hind mt-0.5">iPhone, Samsung, Xiaomi...</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shop by Brand -->
+        <section class="mt-10">
+            <div class="flex items-center justify-between mb-4">
+                <h2 class="text-[20px] md:text-[24px] font-bold">Shop by Brand</h2>
+                <a href="#products" class="text-[13px] font-medium text-brand hover:underline">View All →</a>
+            </div>
+            <div class="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-8 gap-3">
+                <button data-brand="Apple" class="brand-btn group bg-white rounded-2xl p-4 border border-slate-100 hover:border-slate-900 hover:shadow-lg transition flex flex-col items-center gap-2">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg" class="w-9 h-9 group-hover:scale-110 transition" alt="Apple">
+                    <span class="text-[12px] font-medium">iPhone</span>
+                </button>
+                <button data-brand="Samsung" class="brand-btn group bg-white rounded-2xl p-4 border border-slate-100 hover:border-slate-900 hover:shadow-lg transition flex flex-col items-center gap-2">
+                    <div class="w-9 h-9 grid place-items-center font-bold text-[#1428a0] group-hover:scale-110 transition">S</div>
+                    <span class="text-[12px] font-medium">Samsung</span>
+                </button>
+                <button data-brand="Xiaomi" class="brand-btn group bg-white rounded-2xl p-4 border border-slate-100 hover:border-slate-900 hover:shadow-lg transition flex flex-col items-center gap-2">
+                    <div class="w-9 h-9 grid place-items-center font-bold text-[#ff6900] group-hover:scale-110 transition">Mi</div>
+                    <span class="text-[12px] font-medium">Xiaomi</span>
+                </button>
+                <button data-brand="OPPO" class="brand-btn group bg-white rounded-2xl p-4 border border-slate-100 hover:border-slate-900 hover:shadow-lg transition flex flex-col items-center gap-2">
+                    <div class="w-9 h-9 grid place-items-center font-bold text-[#2d8c3c] group-hover:scale-110 transition">O</div>
+                    <span class="text-[12px] font-medium">OPPO</span>
+                </button>
+                <button data-brand="Vivo" class="brand-btn group bg-white rounded-2xl p-4 border border-slate-100 hover:border-slate-900 hover:shadow-lg transition flex flex-col items-center gap-2">
+                    <div class="w-9 h-9 grid place-items-center font-bold text-[#415fff] group-hover:scale-110 transition">V</div>
+                    <span class="text-[12px] font-medium">Vivo</span>
+                </button>
+                <button data-brand="OnePlus" class="brand-btn group bg-white rounded-2xl p-4 border border-slate-100 hover:border-slate-900 hover:shadow-lg transition flex flex-col items-center gap-2">
+                    <div class="w-9 h-9 grid place-items-center font-bold text-[#f5222d] group-hover:scale-110 transition">1+</div>
+                    <span class="text-[12px] font-medium">OnePlus</span>
+                </button>
+                <button data-brand="Google" class="brand-btn group bg-white rounded-2xl p-4 border border-slate-100 hover:border-slate-900 hover:shadow-lg transition flex flex-col items-center gap-2">
+                    <div class="w-9 h-9 grid place-items-center font-bold text-[#4285f4] group-hover:scale-110 transition">G</div>
+                    <span class="text-[12px] font-medium">Pixel</span>
+                </button>
+                <button data-brand="Realme" class="brand-btn group bg-white rounded-2xl p-4 border border-slate-100 hover:border-slate-900 hover:shadow-lg transition flex flex-col items-center gap-2">
+                    <div class="w-9 h-9 grid place-items-center font-bold text-[#ffcc00] group-hover:scale-110 transition">R</div>
+                    <span class="text-[12px] font-medium">Realme</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Products -->
+        <section id="products" class="mt-10">
+            <div class="flex items-end justify-between gap-4 mb-4">
+                <div>
+                    <h2 class="text-[20px] md:text-[24px] font-bold">Best Selling Used Phones</h2>
+                    <p class="text-[13px] text-slate-500 hind mt-0.5">Halishahar থেকে সারা বাংলাদেশে ক্যাশ অন ডেলিভারি</p>
+                </div>
+                <div class="hidden md:flex items-center gap-2 p-1 bg-slate-100 rounded-full text-[13px] font-medium">
+                    <button data-tab="all" class="tab-btn px-3.5 py-1.5 rounded-full bg-white shadow-sm text-slate-900">All</button>
+                    <button data-tab="Apple" class="tab-btn px-3.5 py-1.5 rounded-full hover:text-slate-900 text-slate-600">iPhone</button>
+                    <button data-tab="Samsung" class="tab-btn px-3.5 py-1.5 rounded-full hover:text-slate-900 text-slate-600">Samsung</button>
+                    <button data-tab="Xiaomi" class="tab-btn px-3.5 py-1.5 rounded-full hover:text-slate-900 text-slate-600">Xiaomi</button>
+                </div>
+            </div>
+
+            <div id="productGrid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 md:gap-4">
+                <!-- Products injected -->
+            </div>
+
+            <div class="text-center mt-8">
+                <button id="loadMore" class="px-6 h-11 rounded-full border border-slate-300 font-medium hover:bg-slate-900 hover:text-white hover:border-slate-900 transition text-[14px]">Load More Phones</button>
+            </div>
+        </section>
+
+        <!-- Why Choose Detailed -->
+        <section class="mt-14">
+            <div class="bg-gradient-to-b from-white to-slate-50 rounded-[28px] border border-slate-100 p-6 md:p-10">
+                <div class="max-w-3xl mx-auto text-center">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-brand text-[12px] font-semibold mb-3">
+                        <i class="ri-verified-badge-fill"></i> TRUSTED IN CHITTAGONG
+                    </div>
+                    <h2 class="text-[26px] md:text-[32px] font-extrabold leading-tight">Why Choose Brother's Mobile Shop?</h2>
+                    <p class="text-slate-600 mt-2 hind">Halishahar, Chittagong এর সবচেয়ে বিশ্বস্ত Used Smartphone Shop — Buy, Sell & Exchange</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5 mt-8">
+                    <div class="bg-white rounded-2xl p-5 border border-slate-100">
+                        <div class="flex items-start gap-3">
+                            <div class="w-11 h-11 rounded-xl bg-emerald-50 text-emerald-600 grid place-items-center shrink-0"><i class="ri-shield-check-line text-2xl"></i></div>
+                            <div>
+                                <div class="font-bold">✅ Original Products Only</div>
+                                <div class="text-[14px] text-slate-600 hind mt-1">সব পণ্য ১০০% অরিজিনাল — কোন কপি বা রিফারবিশড নয়। প্রতিটি ফোন চেক করে বিক্রি করা হয়।</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-2xl p-5 border border-slate-100">
+                        <div class="flex items-start gap-3">
+                            <div class="w-11 h-11 rounded-xl bg-blue-50 text-brand grid place-items-center shrink-0"><i class="ri-truck-line text-2xl"></i></div>
+                            <div>
+                                <div class="font-bold">💳 Cash On Delivery</div>
+                                <div class="text-[14px] text-slate-600 hind mt-1">ক্যাশ অন ডেলিভারি সুবিধা — সারা বাংলাদেশে হোম ডেলিভারি। আগে প্রোডাক্ট দেখুন, তারপর টাকা দিন।</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-2xl p-5 border border-slate-100">
+                        <div class="flex items-start gap-3">
+                            <div class="w-11 h-11 rounded-xl bg-amber-50 text-amber-600 grid place-items-center shrink-0"><i class="ri-refresh-line text-2xl"></i></div>
+                            <div>
+                                <div class="font-bold">🛡️ 7-Day Replacement</div>
+                                <div class="text-[14px] text-slate-600 hind mt-1">৭ দিনের রিপ্লেসমেন্ট গ্যারান্টি — কোন সমস্যা হলে ৭ দিনের মধ্যে পরিবর্তন করে নিন।</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-2xl p-5 border border-slate-100">
+                        <div class="flex items-start gap-3">
+                            <div class="w-11 h-11 rounded-xl bg-violet-50 text-violet-600 grid place-items-center shrink-0"><i class="ri-tools-line text-2xl"></i></div>
+                            <div>
+                                <div class="font-bold">🔧 1-Year Service Warranty</div>
+                                <div class="text-[14px] text-slate-600 hind mt-1">১ বছরের সার্ভিস ওয়ারেন্টি — আমাদের নিজস্ব সার্ভিস সেন্টার থেকে ফ্রি সার্ভিস।</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-2xl p-5 border border-slate-100">
+                        <div class="flex items-start gap-3">
+                            <div class="w-11 h-11 rounded-xl bg-rose-50 text-rose-600 grid place-items-center shrink-0"><i class="ri-funds-line text-2xl"></i></div>
+                            <div>
+                                <div class="font-bold">💰 Best Price Guaranteed</div>
+                                <div class="text-[14px] text-slate-600 hind mt-1">সর্বনিম্ন মূল্যে সেরা পণ্য — মার্কেট চ্যালেঞ্জ প্রাইস। Buy & Sell দুটোই করি।</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-2xl p-5 border border-slate-100">
+                        <div class="flex items-start gap-3">
+                            <div class="w-11 h-11 rounded-xl bg-cyan-50 text-cyan-600 grid place-items-center shrink-0"><i class="ri-apps-2-line text-2xl"></i></div>
+                            <div>
+                                <div class="font-bold">📱 All Brands Available</div>
+                                <div class="text-[14px] text-slate-600 hind mt-1">Samsung, iPhone, Xiaomi, OPPO, Vivo, OnePlus, Realme, Google Pixel — সব ব্র্যান্ড পাবেন।</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
+                    <a href="tel:01833738390" class="h-12 px-6 rounded-full bg-slate-900 text-white font-semibold flex items-center gap-2 hover:bg-black transition"><i class="ri-phone-fill"></i> Call Now: 01833-738390</a>
+                    <a href="https://wa.me/8801833738390" target="_blank" class="h-12 px-6 rounded-full bg-[#25D366] text-white font-semibold flex items-center gap-2 hover:brightness-110 transition"><i class="ri-whatsapp-fill"></i> WhatsApp</a>
+                    <a href="#" class="h-12 px-6 rounded-full bg-white border border-slate-300 font-semibold flex items-center gap-2 hover:bg-slate-50 transition"><i class="ri-map-pin-2-fill text-brand"></i> Visit Halishahar Shop</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Store Info -->
+        <section class="mt-10 grid lg:grid-cols-3 gap-4">
+            <div class="lg:col-span-2 bg-white rounded-[24px] border border-slate-100 p-6">
+                <h3 class="font-bold text-[18px] mb-3 flex items-center gap-2"><i class="ri-store-3-fill text-brand"></i> Visit Our Shop</h3>
+                <div class="aspect-[16/9] rounded-xl overflow-hidden bg-slate-100">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3689.5!2d91.783!3d22.356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acd8b5353672f1%3A0x7d2b8c7b7b7b7b7b!2sHalishahar%2C%20Chittagong!5e0!3m2!1sen!2sbd!4v1234567890" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="mt-4 grid sm:grid-cols-3 gap-3 text-[14px]">
+                    <div class="flex items-center gap-2.5 p-3 rounded-xl bg-slate-50"><i class="ri-map-pin-fill text-brand text-xl"></i><div><div class="text-[12px] text-slate-500">Address</div><div class="font-medium hind">Halishahar, Chittagong</div></div></div>
+                    <div class="flex items-center gap-2.5 p-3 rounded-xl bg-slate-50"><i class="ri-time-fill text-brand text-xl"></i><div><div class="text-[12px] text-slate-500">Open</div><div class="font-medium">10AM - 9PM (Daily)</div></div></div>
+                    <div class="flex items-center gap-2.5 p-3 rounded-xl bg-slate-50"><i class="ri-cash-fill text-brand text-xl"></i><div><div class="text-[12px] text-slate-500">Payment</div><div class="font-medium hind">Cash, bKash, Nagad</div></div></div>
+                </div>
+            </div>
+            <div class="bg-[#0a1224] text-white rounded-[24px] p-6 flex flex-col">
+                <div class="w-14 h-14 rounded-2xl bg-white/10 grid place-items-center mb-4"><i class="ri-exchange-dollar-fill text-3xl text-[#38bdf8]"></i></div>
+                <h3 class="text-[22px] font-bold leading-tight">Sell Your Phone in 5 Minutes</h3>
+                <p class="text-white/70 text-[14px] mt-2 hind">আপনার পুরাতন ফোন বিক্রি করুন সর্বোচ্চ দামে। Instant cash payment.</p>
+                <ul class="mt-4 space-y-2 text-[14px]">
+                    <li class="flex items-center gap-2"><i class="ri-check-line text-[#38bdf8]"></i> Best market price</li>
+                    <li class="flex items-center gap-2"><i class="ri-check-line text-[#38bdf8]"></i> Instant payment</li>
+                    <li class="flex items-center gap-2"><i class="ri-check-line text-[#38bdf8]"></i> Data wipe guarantee</li>
+                </ul>
+                <button onclick="toast('Call 01833-738390 to sell')" class="mt-auto w-full h-11 rounded-xl bg-white text-slate-900 font-semibold hover:bg-slate-100 transition">Get Quote Now</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-16 border-t border-slate-200 bg-white">
+        <div class="max-w-[1400px] mx-auto px-3 md:px-4 py-10">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center gap-2.5 mb-3">
+                        <div class="w-10 h-10 rounded-lg bg-black p-1">
+                            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 1000'><rect width='1000' height='1000' fill='black'/><g transform='translate(250,120) scale(1.1)'><path d='M150 0c60 0 140 0 170 30v380c0 25-80 70-120 95-40-25-120-70-120-95V30C80 0 90 0 150 0z' fill='none' stroke='%2300aaff' stroke-width='14' stroke-linejoin='round'/><rect x='140' y='20' width='60' height='14' rx='7' fill='%2338bdf8'/><text x='30' y='320' font-family='Arial Black' font-size='340' font-weight='900' fill='white'>B</text><path d='M280 140l50 55 90-85v210l-55 40v-135l-35 30-50-55z' fill='%2300aaff'/></g></svg>" class="w-full h-full">
+                        </div>
+                        <div>
+                            <div class="font-extrabold leading-none">BROTHER'S</div>
+                            <div class="text-[11px] text-brand font-bold tracking-widest">MOBILE SHOP</div>
+                        </div>
+                    </div>
+                    <p class="text-[13px] text-slate-600 hind">USED SMARTPHONES. TRUSTED BROTHERS.<br>Chittagong, Bangladesh</p>
+                    <div class="flex items-center gap-2 mt-4">
+                        <a href="#" class="w-9 h-9 grid place-items-center rounded-lg bg-slate-100 hover:bg-slate-900 hover:text-white transition"><i class="ri-facebook-fill"></i></a>
+                        <a href="#" class="w-9 h-9 grid place-items-center rounded-lg bg-slate-100 hover:bg-slate-900 hover:text-white transition"><i class="ri-youtube-fill"></i></a>
+                        <a href="https://wa.me/8801833738390" class="w-9 h-9 grid place-items-center rounded-lg bg-slate-100 hover:bg-slate-900 hover:text-white transition"><i class="ri-whatsapp-fill"></i></a>
+                        <a href="#" class="w-9 h-9 grid place-items-center rounded-lg bg-slate-100 hover:bg-slate-900 hover:text-white transition"><i class="ri-tiktok-fill"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <div class="font-bold mb-3">Shop</div>
+                    <ul class="space-y-2 text-[14px] text-slate-600">
+                        <li><a href="#" class="hover:text-brand">iPhone Used</a></li>
+                        <li><a href="#" class="hover:text-brand">Samsung Used</a></li>
+                        <li><a href="#" class="hover:text-brand">Xiaomi Used</a></li>
+                        <li><a href="#" class="hover:text-brand">Under 20,000৳</a></li>
+                        <li><a href="#" class="hover:text-brand">Sell Your Phone</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="font-bold mb-3">Support</div>
+                    <ul class="space-y-2 text-[14px] text-slate-600">
+                        <li><a href="#" class="hover:text-brand">7-Day Replacement</a></li>
+                        <li><a href="#" class="hover:text-brand">1-Year Service Warranty</a></li>
+                        <li><a href="#" class="hover:text-brand">Cash On Delivery</a></li>
+                        <li><a href="#" class="hover:text-brand">EMI Policy</a></li>
+                        <li><a href="#" class="hover:text-brand">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="font-bold mb-3">Contact</div>
+                    <ul class="space-y-2.5 text-[14px] text-slate-600">
+                        <li class="flex items-start gap-2"><i class="ri-map-pin-2-fill text-brand mt-0.5"></i><span class="hind">Halishahar, Chittagong, Bangladesh</span></li>
+                        <li class="flex items-center gap-2"><i class="ri-phone-fill text-brand"></i><a href="tel:01833738390" class="hover:text-brand font-medium">01833-738390</a></li>
+                        <li class="flex items-center gap-2"><i class="ri-whatsapp-fill text-brand"></i><a href="https://wa.me/8801833738390" class="hover:text-brand">WhatsApp Chat</a></li>
+                        <li class="flex items-center gap-2"><i class="ri-time-fill text-brand"></i><span>10:00 AM - 9:00 PM</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 pt-6 border-t border-slate-200 flex flex-col md:flex-row items-center justify-between gap-3 text-[12px] text-slate-500">
+                <p>© 2025 Brother's Mobile Shop. All rights reserved. | Chittagong, Bangladesh</p>
+                <p class="hind">সব ব্র্যান্ডের Original Mobile কম দামে</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Actions -->
+    <div class="fixed right-4 bottom-20 md:bottom-6 z-30 flex flex-col gap-2.5">
+        <a href="https://wa.me/8801833738390" target="_blank" class="w-12 h-12 rounded-full bg-[#25D366] text-white grid place-items-center shadow-lg shadow-green-600/20 hover:scale-105 transition">
+            <i class="ri-whatsapp-fill text-[26px]"></i>
+        </a>
+        <a href="tel:01833738390" class="w-12 h-12 rounded-full bg-brand text-white grid place-items-center shadow-lg shadow-blue-600/20 hover:scale-105 transition">
+            <i class="ri-phone-fill text-[22px]"></i>
+        </a>
+    </div>
+
+    <!-- Bottom Nav Mobile -->
+    <div class="fixed bottom-0 inset-x-0 z-30 bg-white/95 backdrop-blur-xl border-t border-slate-200 lg:hidden">
+        <div class="grid grid-cols-5 h-[64px] text-[11px]">
+            <a href="#" class="grid place-items-center gap-0.5 text-brand"><i class="ri-home-5-fill text-[22px]"></i><span class="font-medium">Home</span></a>
+            <a href="#products" class="grid place-items-center gap-0.5 text-slate-500"><i class="ri-search-line text-[22px]"></i><span>Search</span></a>
+            <button id="bottomCart" class="grid place-items-center gap-0.5 text-slate-500 relative"><i class="ri-shopping-bag-3-line text-[22px]"></i><span>Cart</span><span class="absolute top-1 right-6 w-4 h-4 bg-brand text-white text-[10px] grid place-items-center rounded-full" id="bottomCartCount">0</span></button>
+            <a href="https://wa.me/8801833738390" class="grid place-items-center gap-0.5 text-slate-500"><i class="ri-whatsapp-line text-[22px]"></i><span>Chat</span></a>
+            <a href="tel:01833738390" class="grid place-items-center gap-0.5 text-slate-500"><i class="ri-user-3-line text-[22px]"></i><span>Call</span></a>
+        </div>
+    </div>
+
+    <!-- Cart Drawer -->
+    <div id="cartDrawer" class="fixed inset-0 z-[60] hidden">
+        <div id="cartOverlay" class="absolute inset-0 bg-slate-900/60 backdrop-blur-sm"></div>
+        <div id="cartPanel" class="absolute right-0 top-0 h-full w-full max-w-[420px] bg-white shadow-2xl translate-x-full transition-transform duration-300 flex flex-col">
+            <div class="h-[60px] flex items-center justify-between px-4 border-b">
+                <div class="font-bold text-[17px]">Your Cart (<span id="cartItemsCount">0</span>)</div>
+                <button id="cartClose" class="w-9 h-9 grid place-items-center rounded-lg hover:bg-slate-100"><i class="ri-close-line text-2xl"></i></button>
+            </div>
+            <div id="cartItems" class="flex-1 overflow-y-auto p-4 space-y-3">
+                <div id="emptyCart" class="h-full grid place-items-center text-center p-8">
+                    <div>
+                        <div class="w-20 h-20 mx-auto rounded-full bg-slate-100 grid place-items-center mb-3"><i class="ri-shopping-bag-3-line text-3xl text-slate-400"></i></div>
+                        <div class="font-semibold">Your cart is empty</div>
+                        <div class="text-[13px] text-slate-500 mt-1 hind">ভালো ফোনগুলো দ্রুত বিক্রি হয়ে যায়!</div>
+                        <button onclick="closeCart()" class="mt-4 h-10 px-5 rounded-full bg-slate-900 text-white text-[14px] font-medium">Continue Shopping</button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t p-4 bg-slate-50">
+                <div class="flex items-center justify-between text-[14px] mb-2"><span class="text-slate-600">Subtotal</span><span id="cartSubtotal" class="font-bold text-[18px]">৳0</span></div>
+                <div class="text-[12px] text-slate-500 mb-3 hind">Cash on Delivery সারা বাংলাদেশে</div>
+                <button onclick="toast('Order via WhatsApp: 01833-738390')" class="w-full h-12 rounded-xl bg-brand text-white font-semibold hover:bg-brand-dark transition flex items-center justify-center gap-2"><i class="ri-whatsapp-fill"></i> Checkout via WhatsApp</button>
+                <button onclick="closeCart()" class="w-full h-10 rounded-xl hover:bg-slate-200 font-medium mt-2 text-[14px]">Continue Shopping</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast -->
+    <div id="toast" class="fixed top-5 right-5 z-[100] hidden">
+        <div class="bg-slate-900 text-white px-4 py-3 rounded-xl shadow-2xl flex items-center gap-2.5 text-[14px] max-w-[320px]">
+            <i class="ri-check-line text-xl text-emerald-400"></i>
+            <span id="toastMsg">Added to cart</span>
+        </div>
+    </div>
+
+    <script>
+        // Data
+        const slides = [
+            {
+                title: "Original Used iPhone",
+                subtitle: "কম দামে, গ্যারান্টি সহ",
+                desc: "Buy & Sell | 7-Day Replacement | 1-Year Service",
+                img: "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=800",
+                cta: "Shop iPhones",
+                bg: "from-slate-900 via-blue-950 to-slate-900"
+            },
+            {
+                title: "Samsung Flagship",
+                subtitle: "S22, S23 Ultra Available",
+                desc: "Cash On Delivery Anywhere Bangladesh",
+                img: "https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?w=800",
+                cta: "View Samsung",
+                bg: "from-violet-950 via-slate-900 to-black"
+            },
+            {
+                title: "All Brands Under One Roof",
+                subtitle: "Xiaomi • OPPO • Vivo • OnePlus",
+                desc: "Halishahar, Chittagong • Call: 01833-738390",
+                img: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800",
+                cta: "See All Phones",
+                bg: "from-blue-950 via-slate-900 to-emerald-950"
+            }
+        ];
+
+        const products = [
+            {id:1, name:"iPhone 13 Pro Max", brand:"Apple", storage:"256GB", bh:"92%", price:78500, oldPrice:95000, img:"https://images.unsplash.com/photo-1632661674596-df8be070a5c5?w=600", badge:"Hot", condition:"Like New"},
+            {id:2, name:"iPhone 12 Pro", brand:"Apple", storage:"128GB", bh:"89%", price:54900, oldPrice:65000, img:"https://images.unsplash.com/photo-1605236453806-6ff36851218e?w=600", badge:"-15%", condition:"Excellent"},
+            {id:3, name:"Samsung Galaxy S22 Ultra", brand:"Samsung", storage:"256GB", bh:"-", price:68900, oldPrice:82000, img:"https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?w=600", badge:"Best", condition:"Like New"},
+            {id:4, name:"iPhone 11", brand:"Apple", storage:"128GB", bh:"87%", price:38500, oldPrice:45000, img:"https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?w=600", badge:"", condition:"Good"},
+            {id:5, name:"Xiaomi 12 Pro", brand:"Xiaomi", storage:"256GB", bh:"-", price:42900, oldPrice:52000, img:"https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=600", badge:"-17%", condition:"Excellent"},
+            {id:6, name:"Samsung S21 FE", brand:"Samsung", storage:"128GB", bh:"-", price:34900, oldPrice:41000, img:"https://images.unsplash.com/photo-1610945415295-1c7f6c3e0f6a?w=600", badge:"", condition:"Good"},
+            {id:7, name:"OnePlus 10 Pro", brand:"OnePlus", storage:"256GB", bh:"-", price:46500, oldPrice:55000, img:"https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=600", badge:"New", condition:"Like New"},
+            {id:8, name:"iPhone 13", brand:"Apple", storage:"128GB", bh:"94%", price:62500, oldPrice:72000, img:"https://images.unsplash.com/photo-1632585254367-0fe9c7d0baf5?w=600", badge:"", condition:"Excellent"},
+            {id:9, name:"OPPO Reno 8", brand:"OPPO", storage:"256GB", bh:"-", price:28900, oldPrice:34000, img:"https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=600", badge:"", condition:"Good"},
+            {id:10, name:"Vivo V27", brand:"Vivo", storage:"256GB", bh:"-", price:31500, oldPrice:37000, img:"https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=600", badge:"-15%", condition:"Excellent"},
+            {id:11, name:"Google Pixel 7", brand:"Google", storage:"128GB", bh:"-", price:48900, oldPrice:58000, img:"https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=600", badge:"", condition:"Like New"},
+            {id:12, name:"iPhone 14 Pro", brand:"Apple", storage:"256GB", bh:"96%", price:98500, oldPrice:115000, img:"https://images.unsplash.com/photo-1678685888221-cda773a3dcdb?w=600", badge:"Hot", condition:"Like New"},
+        ];
+
+        let cart = JSON.parse(localStorage.getItem('bms_cart')||'[]');
+        let wishlist = JSON.parse(localStorage.getItem('bms_wish')||'[]');
+        let currentSlide = 0;
+        let currentFilter = 'all';
+        let visibleProducts = 10;
+
+        // Init
+        document.addEventListener('DOMContentLoaded', () => {
+            renderSlides();
+            renderProducts();
+            updateCounts();
+            startSlider();
+            
+            // Events
+            document.getElementById('menuBtn').onclick = openMenu;
+            document.getElementById('menuClose').onclick = closeMenu;
+            document.getElementById('menuOverlay').onclick = closeMenu;
+            document.getElementById('cartBtn').onclick = openCart;
+            document.getElementById('bottomCart').onclick = openCart;
+            document.getElementById('cartClose').onclick = closeCart;
+            document.getElementById('cartOverlay').onclick = closeCart;
+            document.getElementById('wishlistBtn').onclick = () => toast('Wishlist: '+wishlist.length+' items');
+            document.getElementById('prevSlide').onclick = () => changeSlide(-1);
+            document.getElementById('nextSlide').onclick = () => changeSlide(1);
+            document.getElementById('searchInput').oninput = (e) => searchProducts(e.target.value);
+            document.getElementById('searchInputMobile').oninput = (e) => searchProducts(e.target.value);
+            document.getElementById('loadMore').onclick = () => { visibleProducts+=5; renderProducts(); };
+            
+            document.querySelectorAll('[data-filter]').forEach(btn => {
+                btn.onclick = (e) => { e.preventDefault(); filterByBrand(btn.dataset.filter); document.getElementById('products').scrollIntoView({behavior:'smooth'}); }
+            });
+            document.querySelectorAll('.brand-btn').forEach(btn => {
+                btn.onclick = () => filterByBrand(btn.dataset.brand);
+            });
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.onclick = () => {
+                    document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('bg-white','shadow-sm','text-slate-900'));
+                    btn.classList.add('bg-white','shadow-sm','text-slate-900');
+                    filterByBrand(btn.dataset.tab);
+                }
+            });
+        });
+
+        function renderSlides() {
+            const container = document.getElementById('heroSlides');
+            const dots = document.getElementById('heroDots');
+            container.innerHTML = slides.map((s,i)=>`
+                <div class="absolute inset-0 transition-opacity duration-700 ${i===0?'opacity-100':'opacity-0'}" data-slide="${i}">
+                    <div class="absolute inset-0 bg-gradient-to-r ${s.bg}"></div>
+                    <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(0,102,255,0.2),transparent_50%)]"></div>
+                    <div class="relative h-full max-w-[1400px] mx-auto px-6 md:px-12 flex items-center">
+                        <div class="w-full md:w-[55%] text-white">
+                            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur border border-white/20 text-[12px] font-medium mb-4">
+                                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> In Stock • Halishahar
+                            </div>
+                            <h1 class="text-[32px] md:text-[48px] lg:text-[56px] font-extrabold leading-[1.1] tracking-tight">
+                                ${s.title}<br><span class="text-[#38bdf8] hind">${s.subtitle}</span>
+                            </h1>
+                            <p class="mt-3 text-white/80 text-[15px] md:text-[17px] hind">${s.desc}</p>
+                            <div class="mt-6 flex flex-wrap gap-3">
+                                <a href="#products" class="h-12 px-7 rounded-full bg-white text-slate-900 font-semibold hover:bg-slate-100 transition flex items-center gap-2">
+                                    ${s.cta} <i class="ri-arrow-right-line"></i>
+                                </a>
+                                <a href="tel:01833738390" class="h-12 px-7 rounded-full bg-white/10 backdrop-blur border border-white/20 text-white font-semibold hover:bg-white/20 transition flex items-center gap-2">
+                                    <i class="ri-phone-fill"></i> 01833-738390
+                                </a>
+                            </div>
+                            <div class="mt-6 flex items-center gap-5 text-[13px] text-white/70">
+                                <div class="flex items-center gap-1.5"><i class="ri-shield-check-fill text-emerald-400"></i> 7-Day Replace</div>
+                                <div class="flex items-center gap-1.5"><i class="ri-truck-fill text-sky-400"></i> COD All BD</div>
+                            </div>
+                        </div>
+                        <div class="hidden md:block absolute right-10 lg:right-20 top-1/2 -translate-y-1/2">
+                            <div class="relative">
+                                <div class="absolute -inset-10 bg-blue-500/20 rounded-full blur-3xl"></div>
+                                <img src="${s.img}" alt="" class="relative w-[340px] lg:w-[420px] h-[340px] lg:h-[420px] object-contain drop-shadow-2xl">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+            dots.innerHTML = slides.map((_,i)=>`<button onclick="goSlide(${i})" class="w-8 h-1.5 rounded-full transition-all ${i===0?'bg-white w-10':'bg-white/40'}" data-dot="${i}"></button>`).join('');
+        }
+
+        function changeSlide(dir) {
+            const slidesEls = document.querySelectorAll('[data-slide]');
+            slidesEls[currentSlide].classList.remove('opacity-100');
+            slidesEls[currentSlide].classList.add('opacity-0');
+            currentSlide = (currentSlide + dir + slides.length) % slides.length;
+            slidesEls[currentSlide].classList.remove('opacity-0');
+            slidesEls[currentSlide].classList.add('opacity-100');
+            updateDots();
+        }
+        function goSlide(i) { 
+            const slidesEls = document.querySelectorAll('[data-slide]');
+            slidesEls[currentSlide].classList.remove('opacity-100'); slidesEls[currentSlide].classList.add('opacity-0');
+            currentSlide = i;
+            slidesEls[currentSlide].classList.remove('opacity-0'); slidesEls[currentSlide].classList.add('opacity-100');
+            updateDots();
+        }
+        function updateDots() {
+            document.querySelectorAll('[data-dot]').forEach((d,i)=>{
+                d.className = `w-8 h-1.5 rounded-full transition-all ${i===currentSlide?'bg-white w-10':'bg-white/40'}`;
+            });
+        }
+        function startSlider() { setInterval(()=>changeSlide(1), 5000); }
+
+        function renderProducts() {
+            const grid = document.getElementById('productGrid');
+            let filtered = products;
+            if(currentFilter !== 'all') {
+                filtered = products.filter(p => p.brand === currentFilter);
+            }
+            const show = filtered.slice(0, visibleProducts);
+            grid.innerHTML = show.map(p => `
+                <div class="product-card group bg-white rounded-[20px] border border-slate-200 overflow-hidden transition-all duration-300 flex flex-col">
+                    <div class="relative aspect-square bg-slate-50 overflow-hidden">
+                        <img src="${p.img}" alt="${p.name}" class="w-full h-full object-contain p-4 group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-2.5 left-2.5 flex flex-col gap-1.5">
+                            <span class="px-2 py-1 rounded-lg bg-slate-900 text-white text-[10px] font-bold uppercase tracking-wide">${p.condition}</span>
+                            ${p.badge ? `<span class="px-2 py-1 rounded-lg ${p.badge.includes('%')?'bg-rose-500':'bg-emerald-500'} text-white text-[10px] font-bold">${p.badge}</span>`:''}
+                        </div>
+                        <button onclick="toggleWish(${p.id})" class="absolute top-2.5 right-2.5 w-8 h-8 grid place-items-center rounded-full bg-white/90 backdrop-blur hover:bg-white shadow-md transition ${wishlist.includes(p.id)?'text-rose-500':'text-slate-600'}">
+                            <i class="${wishlist.includes(p.id)?'ri-heart-3-fill':'ri-heart-3-line'}"></i>
+                        </button>
+                        <div class="absolute inset-x-0 bottom-0 p-2.5 translate-y-full group-hover:translate-y-0 transition">
+                            <button onclick="quickView(${p.id})" class="w-full h-9 rounded-xl bg-slate-900/90 backdrop-blur text-white text-[12px] font-medium hover:bg-slate-900">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="p-3.5 flex-1 flex flex-col">
+                        <div class="flex items-start justify-between gap-2">
+                            <h3 class="font-semibold text-[14px] leading-snug line-clamp-2 flex-1">${p.name}</h3>
+                        </div>
+                        <div class="flex items-center gap-2 mt-1.5 text-[12px] text-slate-500">
+                            <span class="px-2 py-0.5 rounded-md bg-slate-100 font-medium">${p.storage}</span>
+                            ${p.bh!=='-'?`<span class="px-2 py-0.5 rounded-md bg-slate-100 font-medium">BH ${p.bh}</span>`:''}
+                            <span class="px-2 py-0.5 rounded-md bg-slate-100 font-medium">${p.brand}</span>
+                        </div>
+                        <div class="mt-3 flex items-end justify-between">
+                            <div>
+                                <div class="text-[18px] font-extrabold text-slate-900 leading-none">৳${p.price.toLocaleString('en-BD')}</div>
+                                ${p.oldPrice?`<div class="text-[12px] text-slate-400 line-through">৳${p.oldPrice.toLocaleString('en-BD')}</div>`:''}
+                            </div>
+                            <button onclick="addToCart(${p.id})" class="w-9 h-9 grid place-items-center rounded-xl bg-brand text-white hover:bg-brand-dark hover:scale-105 active:scale-95 transition shadow-md shadow-blue-500/20">
+                                <i class="ri-add-line text-xl"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+            
+            if(visibleProducts >= filtered.length) {
+                document.getElementById('loadMore').classList.add('hidden');
+            } else {
+                document.getElementById('loadMore').classList.remove('hidden');
+            }
+        }
+
+        function filterByBrand(brand) {
+            currentFilter = brand === 'all' ? 'all' : brand;
+            visibleProducts = 10;
+            renderProducts();
+        }
+
+        function searchProducts(q) {
+            if(!q) { renderProducts(); return; }
+            const grid = document.getElementById('productGrid');
+            const filtered = products.filter(p => 
+                p.name.toLowerCase().includes(q.toLowerCase()) || 
+                p.brand.toLowerCase().includes(q.toLowerCase())
+            );
+            if(filtered.length===0) {
+                grid.innerHTML = `<div class="col-span-full text-center py-16"><div class="text-5xl mb-3">🔍</div><div class="font-semibold">No phones found</div><div class="text-[13px] text-slate-500 hind mt-1">অন্য কিছু খুঁজুন</div></div>`;
+                return;
+            }
+            grid.innerHTML = filtered.map(p => `
+                <div class="product-card bg-white rounded-[20px] border border-slate-200 overflow-hidden">
+                    <div class="aspect-square bg-slate-50"><img src="${p.img}" class="w-full h-full object-contain p-4"></div>
+                    <div class="p-3.5">
+                        <h3 class="font-semibold text-[14px]">${p.name}</h3>
+                        <div class="mt-2 flex items-end justify-between">
+                            <div class="text-[18px] font-extrabold">৳${p.price.toLocaleString('en-BD')}</div>
+                            <button onclick="addToCart(${p.id})" class="w-9 h-9 grid place-items-center rounded-xl bg-brand text-white"><i class="ri-add-line"></i></button>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function addToCart(id) {
+            const product = products.find(p=>p.id===id);
+            const existing = cart.find(i=>i.id===id);
+            if(existing) existing.qty++;
+            else cart.push({...product, qty:1});
+            localStorage.setItem('bms_cart', JSON.stringify(cart));
+            updateCounts();
+            toast(`${product.name} added to cart`);
+            openCart();
+        }
+
+        function toggleWish(id) {
+            const idx = wishlist.indexOf(id);
+            if(idx>-1) wishlist.splice(idx,1);
+            else wishlist.push(id);
+            localStorage.setItem('bms_wish', JSON.stringify(wishlist));
+            updateCounts();
+            renderProducts();
+            toast(idx>-1?'Removed from wishlist':'Added to wishlist');
+        }
+
+        function updateCounts() {
+            const total = cart.reduce((s,i)=>s+i.qty,0);
+            document.getElementById('cartCount').textContent = total;
+            document.getElementById('bottomCartCount').textContent = total;
+            document.getElementById('cartItemsCount').textContent = total;
+            document.getElementById('wishCount').textContent = wishlist.length;
+            
+            const cartItems = document.getElementById('cartItems');
+            const emptyCart = document.getElementById('emptyCart');
+            if(total===0) {
+                emptyCart.classList.remove('hidden');
+                cartItems.querySelectorAll('.cart-item').forEach(el=>el.remove());
+            } else {
+                emptyCart.classList.add('hidden');
+                cartItems.querySelectorAll('.cart-item').forEach(el=>el.remove());
+                cart.forEach(item => {
+                    const div = document.createElement('div');
+                    div.className = 'cart-item flex gap-3 p-3 rounded-xl bg-white border border-slate-100';
+                    div.innerHTML = `
+                        <img src="${item.img}" class="w-16 h-16 object-contain bg-slate-50 rounded-lg p-1">
+                        <div class="flex-1 min-w-0">
+                            <div class="font-medium text-[13px] leading-snug line-clamp-1">${item.name}</div>
+                            <div class="text-[11px] text-slate-500">${item.storage} • ${item.condition}</div>
+                            <div class="flex items-center justify-between mt-1.5">
+                                <div class="font-bold text-[14px]">৳${item.price.toLocaleString('en-BD')}</div>
+                                <div class="flex items-center gap-1.5">
+                                    <button onclick="changeQty(${item.id},-1)" class="w-6 h-6 grid place-items-center rounded-md bg-slate-100 hover:bg-slate-200"><i class="ri-subtract-line text-[12px]"></i></button>
+                                    <span class="w-5 text-center text-[13px] font-medium">${item.qty}</span>
+                                    <button onclick="changeQty(${item.id},1)" class="w-6 h-6 grid place-items-center rounded-md bg-slate-100 hover:bg-slate-200"><i class="ri-add-line text-[12px]"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    cartItems.appendChild(div);
+                });
+            }
+            const subtotal = cart.reduce((s,i)=>s+i.price*i.qty,0);
+            document.getElementById('cartSubtotal').textContent = '৳'+subtotal.toLocaleString('en-BD');
+        }
+
+        function changeQty(id, delta) {
+            const item = cart.find(i=>i.id===id);
+            if(!item) return;
+            item.qty += delta;
+            if(item.qty<=0) cart = cart.filter(i=>i.id!==id);
+            localStorage.setItem('bms_cart', JSON.stringify(cart));
+            updateCounts();
+        }
+
+        function openCart() {
+            document.getElementById('cartDrawer').classList.remove('hidden');
+            setTimeout(()=>document.getElementById('cartPanel').classList.remove('translate-x-full'),10);
+            updateCounts();
+        }
+        function closeCart() {
+            document.getElementById('cartPanel').classList.add('translate-x-full');
+            setTimeout(()=>document.getElementById('cartDrawer').classList.add('hidden'),300);
+        }
+        function openMenu() {
+            document.getElementById('mobileMenu').classList.remove('hidden');
+            setTimeout(()=>document.getElementById('menuPanel').classList.remove('-translate-x-full'),10);
+        }
+        function closeMenu() {
+            document.getElementById('menuPanel').classList.add('-translate-x-full');
+            setTimeout(()=>document.getElementById('mobileMenu').classList.add('hidden'),300);
+        }
+        function quickView(id) {
+            const p = products.find(x=>x.id===id);
+            toast(`Quick view: ${p.name} - ৳${p.price.toLocaleString('en-BD')}`);
+        }
+        function toast(msg) {
+            const t = document.getElementById('toast');
+            document.getElementById('toastMsg').textContent = msg;
+            t.classList.remove('hidden');
+            t.style.opacity = '0'; t.style.transform = 'translateY(-10px)';
+            setTimeout(()=>{ t.style.transition='all .3s'; t.style.opacity='1'; t.style.transform='translateY(0)'; },10);
+            setTimeout(()=>{ t.style.opacity='0'; t.style.transform='translateY(-10px)'; setTimeout(()=>t.classList.add('hidden'),300); },2500);
+        }
+
+        // Expose for inline handlers
+        window.goSlide = goSlide;
+        window.toggleWish = toggleWish;
+        window.addToCart = addToCart;
+        window.quickView = quickView;
+        window.changeQty = changeQty;
+        window.closeCart = closeCart;
+        window.toast = toast;
+    </script>
+</body>
+</html>
